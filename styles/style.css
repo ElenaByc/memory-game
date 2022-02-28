@@ -1,0 +1,414 @@
+@font-face {
+	font-family: 'GideonRoman';
+	src: url("../assets/fonts/GideonRoman-Regular.ttf");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'The Nautigal';
+	src: url("../assets/fonts/TheNautigal-Bold.ttf");
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'The Nautigal';
+	src: url("../assets/fonts/TheNautigal-Regular.ttf");
+	font-weight: 400;
+}
+
+:root {
+	--color-black: #000000;
+	--color-white: #ffffff;
+	--color-cerulean: #0066AA;
+}
+  
+html {
+	scroll-behavior: smooth; 
+}
+
+body {
+	background-color: var(--color-white);
+	color: var(--color-black);
+	width: 100%;
+
+	font-family: 'GideonRoman', sans-serif;
+	font-weight: 400;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.page-wrapper {
+	max-width: 1440px;
+	height: 100vh;
+	margin: 0 auto;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/* ----- Header ----- */
+
+.header {
+	background-color: var(--color-white);
+	width: 100%;
+	padding: 5px 5%;
+	border-bottom: 5px solid var(--color-cerulean);
+
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo {
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	align-items: center;
+	column-gap: 5%;
+	justify-content: space-between;
+}
+
+.header-logo-img {
+	flex-shrink: 0;
+	height: 60px;
+	width: 60px;
+
+	background-image: url('../assets/img/game-color.png');
+  	background-size: cover;
+  	background-repeat: no-repeat;
+}
+
+.header-nav {
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	column-gap: 5%;
+	
+	font-size: 20px;
+    line-height: 60px;
+}
+
+.header h1 {
+    margin: 0;
+	font-size: 50px;
+    line-height: 60px;
+	/* color: var(--color-black); */
+	background-image: linear-gradient(to right, #0066AA, #0066AA, red,  #990011, green, #226622, #990011, #773300);
+	-webkit-background-clip: text;
+    -moz-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	padding: 0 20px;
+}
+
+.header .theme {
+	font-size: 30px;
+	line-height: 40px;
+	color: var(--color-cerulean);
+	text-transform: capitalize;
+}
+
+.header .change-theme {
+	padding: 5px;
+	cursor: pointer;
+}
+
+/* ----- Main ----- */
+
+.main {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: calc(100vh - 150px);
+	justify-content: center;
+	align-content: center;	
+	padding: 10px 1%;
+} 
+
+/* ----- Game Section----- */
+
+.game-section {
+	flex-basis: 75%;
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.start {
+	font-size: 30px;
+	line-height: 40px;
+	cursor: pointer;
+	color: var(--color-cerulean);
+	text-align: center;
+	margin: 0;
+	padding: 5px 10px;
+	border: 2px solid var(--color-cerulean);
+	border-radius: 15px;
+}
+
+.start:hover {
+	box-shadow: 0 0 0 0.5em var(--color-white);
+	animation: pulse 1s;
+	color: var(--color-cerulean);
+} 
+
+@keyframes pulse {
+	0%{box-shadow: 0 0 0 0 var(--color-cerulean)}
+}
+
+.game-result {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px;
+	border-radius: 10px;
+	border: 2px solid var(--color-cerulean);
+	animation: zoom-in 2s ease-in-out;
+}
+
+@keyframes zoom-in {
+	from {
+		transform: scale(.1, .1);
+	}
+	  
+	to {
+		transform: scale(1, 1);
+	}
+}
+
+.game-result h2 {
+	font-size: 35px;
+	line-height: 45px;
+	color: var(--color-cerulean);
+	text-align: center;
+}
+
+.game-result h3 {
+	font-size: 25px;
+	line-height: 45px;
+	color: var(--color-black);
+	text-align: center;
+}
+
+.result-time, .result-turns {
+	font-family: 'The Nautigal', cursive;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 40px;
+}
+
+.cards-container {
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+    justify-content: space-around;
+    align-content: space-around;
+	perspective: 1000px;
+}
+
+.hide {
+	display: none;
+}
+
+.card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: calc(25% - 16px);
+	height: calc(33.333% - 14px);
+	margin: 5px;
+	position: relative;
+	background: var(--color-white);
+	border-radius: 5px;
+	border: solid 3px var(--color-cerulean);
+	box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+	transform: scale(1);
+	transform-style: preserve-3d;
+    transition: transform .5s;
+}
+
+.card:active {
+  transform: scale(0.97);
+  transition: transform .2s;
+}
+  
+.card.flip {
+	transform: rotateY(180deg);
+}
+
+.front-face, .back-face {
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	position: absolute;
+	border-radius: 5px;
+	backface-visibility: hidden;
+}
+
+.front-face {
+	width: 85%;
+	height: 85%;
+	background-color: var(--color-white);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	transform: rotateY(180deg);
+}
+
+.back-face {
+	background-image: url('../assets/img/sport/pattern.svg');
+	background-color: var(--color-white);
+	background-position: center;
+	background-size: cover;
+	background-repeat: repeat;
+}
+
+[data-card="1"] .front-face {
+	background-image: url('../assets/img/sport/1.svg');
+}
+
+[data-card="2"] .front-face { 
+	background-image: url('../assets/img/sport/2.svg');
+}
+
+[data-card="3"] .front-face {
+	background-image: url('../assets/img/sport/3.svg');
+}
+
+[data-card="4"] .front-face { 
+	background-image: url('../assets/img/sport/4.svg');
+}
+
+[data-card="5"] .front-face {
+	background-image: url('../assets/img/sport/5.svg');
+}
+
+[data-card="6"] .front-face { 
+	background-image: url('../assets/img/sport/6.svg');
+}
+
+/* ----- Aside ----- */
+
+.aside {
+	flex-basis: 25%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	height: 100%;
+}
+
+.aside h3 {
+	font-size: 25px;
+	line-height: 40px;
+	color: var(--color-cerulean);
+	text-align: center;
+	margin: 0;
+}
+
+.timer, .turns {
+	margin-bottom: 10px;
+}
+
+.elapsed-time, .turns-number {
+	font-family: 'The Nautigal', cursive;
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 50px;
+	text-align: center;
+}
+
+.results {
+	align-items: center;
+	text-align: center;
+}
+
+.results-table {
+	margin: 0 auto;
+	font-size: 18px;
+	line-height: 25px;
+	width: 90%;
+}
+
+.results-table tr.last {
+	animation: blink 2s ease-in-out 10;
+}
+
+@keyframes blink {
+	from {
+		outline: solid 3px var(--color-cerulean);
+	}
+	  
+	to {
+		outline: none;
+	}
+}
+
+/* ----- Footer ----- */
+
+.footer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+    justify-content: center;
+	justify-content: space-between;
+	
+	font-size: 30px;
+	line-height: 50px;
+	padding: 10px 5%;
+	border-top: 5px solid var(--color-cerulean);
+}
+
+.footer-github-logo{
+	display: block;
+	margin: auto auto;
+}
+
+.footer-rss-logo {
+	display: block;
+	width: 120px;
+	margin: auto auto;
+}
+
+/* ----- Tablet size ----- */
+
+@media (max-width: 1000px) {
+	.main {
+		flex-direction: column;
+	}
+
+	.aside.left {
+		flex-direction: row;
+	}
+}
+
+@media (max-width: 860px) {
+	.header {
+		flex-direction: column;
+		row-gap: 10px;
+	}
+
+	.footer {
+		font-size: 30px;
+		line-height: 50px;		
+	}
+
+	.footer-rss-logo {
+		width: 90px;
+	}
+}

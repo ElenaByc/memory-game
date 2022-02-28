@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/game.ico">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <header class ="header">
+            <div class="header-logo">
+                <div class="header-logo-img"></div>
+                <div class="header-title">
+                    <h1>Memory&nbsp;Game</h1>
+                </div>
+            </div>
+            <nav class="header-nav">
+                <div>Current&nbsp;Theme</div>
+                <h3 class="theme">sport</h3>
+                <button class="change-theme">Change</button>
+            </nav>
+        </header>
+
+        <main class="main">
+            <aside class="aside left">
+                <div class="timer">
+                    <h3>Time</h3>
+                    <div class="elapsed-time">00:00</div>
+                </div>
+                <div class="turns">
+                    <h3>Number&nbsp;of&nbsp;Turns</h3>
+                    <div class="turns-number">0</div>
+                </div>
+            </aside>
+            <section class="game-section">
+                <div class="game-result hide">
+                    <h2>Your result:</h2>
+                    <h3>Time: <span class="result-time"></span></h3>
+                    <h3>Turns: <span class="result-turns"></span></h3>
+                </div>
+                <h2 class="start">Start New Game</h2>
+                <div class="cards-container hide">
+                    <div class="card" data-card="1">
+                        <div class="front-face"></div>
+                        <div class="back-face"></div>
+                    </div>
+                
+                    <div class="card" data-card="1">
+                        <div class="front-face"></div>
+                        <div class="back-face"></div>
+                    </div>
+                
+                    <div class="card" data-card="2">
+                        <div class="front-face"></div>
+                        <div class="back-face"></div>
+                    </div>
+                
+                    <div class="card" data-card="2">
+                        <div class="front-face"></div>
+                        <div class="back-face"></div>
+                    </div>
+                
+                    <div class="card" data-card="3">
+                        <div class="front-face"></div>
+                        <div class="back-face"></div>
+                    </div>
+
+                    <div class="card" data-card="3">
+                        <div class="front-face"></div>
+                        <div class="back-face"></div>
+                    </div>
+                
+                    <div class="card" data-card="4">
+                        <div class="front-face"></div>
+                        <div class="back-face"></div>
+                    </div>
+
+                    <div class="card" data-card="4">
+                        <div class="front-face"></div>
+                        <div class="back-face"></div>
+                    </div>
+
+                    <div class="card" data-card="5">
+                        <div class="front-face"></div>
+                        <div class="back-face"></div>
+                    </div>
+
+                    <div class="card" data-card="5">
+                        <div class="front-face"></div>
+                        <div class="back-face"></div>
+                    </div>
+
+                    <div class="card" data-card="6">
+                        <div class="front-face"></div>
+                        <div class="back-face"></div>
+                    </div>
+
+                    <div class="card" data-card="6">
+                        <div class="front-face"></div>
+                        <div class="back-face"></div>
+                    </div>
+                
+               
+                </div>
+            </section>
+            <aside class="aside right">
+                <div class="results">
+                    <h3>Last&nbsp;10&nbsp;Results</h3>
+                    <table class="results-table">
+                    </table>
+                </div>
+            </aside>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-year">&copy; 2022</div>
+            <div class="footer-github">
+                <a href="https://github.com/elenaByc">
+                    <img src="./assets/img/github-logo.png" alt="github-logo" class="footer-github-logo">
+                </a>
+            </div>
+            <div class="footer-rss">
+                <a href="https://rs.school/js/" class="rss">
+                    <img src="./assets/img/rs_school_js.svg" alt="rss-logo" class="footer-rss-logo">
+                </a>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="./js/index.js"></script>
+</body>
+</html>

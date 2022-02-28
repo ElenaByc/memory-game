@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   id="svg1"
+   sodipodi:docname="6.svg"
+   viewBox="0 0 60 60"
+   sodipodi:version="0.32"
+   version="1.0"
+   y="0"
+   x="0"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs46" />
+  <sodipodi:namedview
+     id="base"
+     bordercolor="#666666"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     pagecolor="#ffffff"
+     inkscape:zoom="4.9119411"
+     inkscape:window-x="-11"
+     borderopacity="1.0"
+     inkscape:cx="36.543598"
+     inkscape:cy="25.549981"
+     inkscape:window-y="-11"
+     inkscape:window-height="1046"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <path
+     id="path847"
+     sodipodi:nodetypes="ccccc"
+     style="stroke-linejoin:round;stroke:#333333;stroke-linecap:round;stroke-width:7.5;fill:none"
+     d="m53.186 12.802h-45.648l31.598 18.244-31.098 17.366h44.026"
+     sodipodi:stroke-cmyk="(0.0000000 0.0000000 0.0000000 0.80000001)" />
+  <metadata
+     id="metadata43">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>ftmath sum</dc:title>
+        <dc:date>2011-01-31T02:06:26</dc:date>
+        <dc:description>Originally uploaded by Danny Allen for OCAL 0.18 this icon is part of the flat theme</dc:description>
+        <dc:source>https://openclipart.org/detail/113395/ftmath-sum-by-anonymous</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Anonymous</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>flat</rdf:li>
+            <rdf:li>icon</rdf:li>
+            <rdf:li>theme</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <path
+     style="fill:#782121;stroke-width:0.203586"
+     d="M 6.7165754,51.739613 C 4.8425079,50.88501 3.976497,48.950265 4.6631932,47.152178 4.8473873,46.669872 5.2019163,46.087839 5.4510355,45.858771 5.7001547,45.629704 11.70019,42.208228 18.784448,38.255493 28.843294,32.643054 31.608362,31.016483 31.406749,30.830335 31.264758,30.699232 25.302529,27.222316 18.157353,23.103853 8.6138673,17.603009 5.0295377,15.436664 4.6514629,14.940983 3.3108663,13.18337 3.967245,10.608498 6.0232711,9.5595915 6.784731,9.1711236 7.3814676,9.1613476 30.332668,9.1613476 c 25.88845,0 24.291399,-0.080826 25.495269,1.2903074 1.673709,1.906249 1.07518,4.596009 -1.2586,5.656098 -0.775834,0.352413 -1.744984,0.373986 -16.990847,0.378202 -8.892444,0.0025 -16.100717,0.07184 -16.018383,0.154169 0.08233,0.08233 4.609568,2.725256 10.060516,5.873161 11.16989,6.450571 11.117791,6.410582 11.117791,8.533504 0,0.896939 -0.11378,1.266738 -0.603485,1.961406 -0.534359,0.75801 -1.69204,1.464268 -10.106587,6.165654 -5.226703,2.920271 -9.57071,5.378294 -9.653345,5.462273 -0.08263,0.08398 6.740582,0.152689 15.162707,0.152689 16.431895,0 15.823834,-0.03548 16.993978,0.991581 1.76577,1.549854 1.31264,4.789771 -0.817838,5.847611 -0.752916,0.373844 -1.615031,0.38985 -23.481397,0.435925 -21.6117889,0.04554 -22.7388983,0.03 -23.5158716,-0.324315 z"
+     id="path121" />
+</svg>
